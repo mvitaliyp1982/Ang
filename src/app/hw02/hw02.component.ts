@@ -6,14 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./hw02.component.css']
 })
 export class Hw02Component {
-  Date1:string = "01.06.1982"
-  number:string = "+380673722498"
-  email:string = "mvitaliyp1982@gmail.com"
-  city:string = "Хмельницький"
-  PIB:string = "Мединський В.П."
-  work1:string = `МКП "Хмельницькводоканал" - 2004-2006`
-  work2:string = `ТОВ "Карат" - 2006-по даний час`
-  work3:string = `ще не придумав чим би похвалитись`
-  social1:string = `fb: www.facebook.com/profile.php?id=100006269657922`
-  social2:string = `instagram: @vitalii_medynskyi`
+  profile:Array<string> =["01.06.1982", "+380673722498", "mvitaliyp1982@gmail.com", "Хмельницький", "Мединський В.П."]
+  // Date1:string = "01.06.1982"
+  // number:string = "+380673722498"
+  // email:string = "mvitaliyp1982@gmail.com"
+  // city:string = "Хмельницький"
+  // PIB:string = "Мединський В.П."
+  work:Array<string> = [`МКП "Хмельницькводоканал" - 2004-2006`, `ТОВ "Карат" - 2006-по даний час`, `ще не придумав чим би похвалитись`]
+  social:Array<string> = [`www.facebook.com/profile.php?id=100006269657922`, `@vitalii_medynskyi`]
 }
