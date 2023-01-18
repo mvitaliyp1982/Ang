@@ -1,0 +1,14 @@
+p {
+    text-align: center;
+}
+a {
+    margin: 5%;
+    background-color: green;
+    padding: 1%;
+}
+.footer {
+    background-color: red;
+}
+.header {
+    background-color: red;
+}

@@ -1,0 +1,10 @@
+p {
+    width: 50%;
+    background-color: red;
+    color: white;
+    text-align: justify;
+}
+img {
+    height: 35%;
+    width: 35%;
+}

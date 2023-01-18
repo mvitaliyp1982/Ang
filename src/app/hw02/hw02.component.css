@@ -1,0 +1,16 @@
+table,td {
+    border: 1px solid black;
+}
+img {
+    height: 28.8%;
+    width: 28.8%;
+}
+
+td {
+    width: 234px;
+}
+
+p {
+    background-color: green;
+    width: 50%;
+}
