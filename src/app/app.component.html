@@ -6,12 +6,36 @@
         ...header...
     </div>
 </header>
-<p>
-<a href="/" routerLinkActive="active one">work's</a>    
-<a href="Hw01Component" routerLinkActive="active two">hw01</a>
-<a href="Hw02Component" routerLinkActive="active three">hw02</a>
-<a href="StrangeHobbyComponent" routerLinkActive="active four">strange-hobby</a>
-</p>
+<!-- <p>
+<a routerLink="/" routerLinkActive="active one">work's</a>    
+<a routerLink="Hw01Component" routerLinkActive="active two">hw01</a>
+<a routerLink="Hw02Component" routerLinkActive="active three">hw02</a>
+<a routerLink="StrangeHobbyComponent" routerLinkActive="active four">strange-hobby</a>
+</p> -->
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Панель навигации</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Рекомендуемые</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Цена</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Отключенная</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 <router-outlet></router-outlet>
 <footer>
