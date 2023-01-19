@@ -2,15 +2,21 @@ table,td {
     border: 1px solid black;
 }
 img {
-    height: 28.8%;
-    width: 28.8%;
+    height: fit-content;
+    width: 50%;
 }
-
 td {
     width: 234px;
 }
 
-p {
-    background-color: green;
-    width: 50%;
+.all {
+    display: flex;
+}
+.table {
+    display: inline;
+    margin-left: 1%;
+}
+.photo {
+    display: inline;
+    margin-top: 2.5%;
 }
