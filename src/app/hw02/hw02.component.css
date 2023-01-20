@@ -1,22 +1,33 @@
-table,td {
-    border: 1px solid black;
-}
 img {
-    height: fit-content;
-    width: 50%;
+    width: 35vw;
 }
-td {
-    width: 234px;
+table {
+    width: 35vw;
+    font-size: larger;
 }
-
 .all {
-    display: flex;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:"table photo";
+    background-color: skyblue;
+    align-items: start;
+    padding: 1%;
+    margin: 1%;
 }
 .table {
-    display: inline;
-    margin-left: 1%;
+    grid-area: table;
+    margin-left: 3%;
+}
+.question {
+    background-color: cadetblue;
+    padding-left: 1%;
+}
+.answer {
+    background-color: aqua;
+    padding-left: 1%;
 }
 .photo {
-    display: inline;
+    grid-area: photo;
     margin-top: 2.5%;
+    margin-bottom: 1%;
 }

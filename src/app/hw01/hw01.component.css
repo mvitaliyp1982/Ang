@@ -2,17 +2,28 @@ p {
     background-color: gray;
 }
 .block {
-    display: flex;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:"img text text";
+    align-items: start;
+    background-color: violet;
+    margin: 1%;
+    padding: 1%;
 }
 .img {
-    display: inline;
-    margin-left: 1%;
+    grid-area: img;
 }
 .text {
-    display: inline;
+    grid-area: text;
     margin-left: 1%;
-    margin-right: 1%;
 }
 ul.quote {
     background-color: yellow;
+}
+ul.href {
+    background-color: chartreuse;
+    margin-top: 1%;
+}
+.img li {
+    list-style-type: none;
 }
