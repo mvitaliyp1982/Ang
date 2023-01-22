@@ -1,9 +1,9 @@
 img {
-    width: 37vw;
+    width: 38vw;
     height: 57vh;
 }
 table {
-    width: 35vw;
+    width: 50vw;
     font-size: larger;
 }
 .all {
@@ -29,6 +29,6 @@ table {
 }
 .photo {
     grid-area: photo;
-    margin-top: 2.5%;
+    margin-top: 3.5%;
     margin-bottom: 1%;
 }
