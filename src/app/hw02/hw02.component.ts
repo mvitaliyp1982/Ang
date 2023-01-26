@@ -11,4 +11,33 @@ export class Hw02Component {
   social:Array<string> = ["https://www.facebook.com/profile.php?id=100006269657922", "https://www.instagram.com/vitalii_medynskyi/"];
   salary:number = 1000;
   employment:Array<string> = [`часткова`, `1`];
+  flag:boolean = true;
+  age:any = 40;
+  newDate:Date = new Date(1982,6,1);
+  tm:any;
+  info:string = 'hello';
+  rs:any;
+
+  constructor() {
+this.rs = Number(this.newDate) - Number(Date.now())
+  }
+
+  inc() {
+    this.age++;
+  }
+  dec() {
+    this.age--;
+  }
+
+  consoleInfo(info:any) {
+    console.log(this.info);
+    console.log(info);
+  }
+
+  consoleEvent(e:any) {
+    console.log(e);
+  }
+  consoleEventType(e:any) {
+    console.log(e.type);
+  }
 }

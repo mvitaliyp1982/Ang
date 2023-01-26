@@ -32,3 +32,15 @@ table {
     margin-top: 3.5%;
     margin-bottom: 1%;
 }
+.radio {
+    padding-left: 3%;
+}
+.radio input {
+    margin: 1%;
+}
+td button {
+    margin: 1%;
+    background-color: red;
+    /* width: 40px;
+    height: 40px; */
+}
