@@ -1,0 +1,28 @@
+.block {
+    margin-left: 1%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:"img text";
+    align-items: start;
+    background-color: violet;
+    margin: 1%;
+    padding: 1%;
+}
+.img {
+    grid-area: img;
+}
+img {
+    height: 100%;
+    width: 100%;
+    margin-top: 10%;
+}
+.text {
+    grid-area: text;
+    margin-left: 1%;
+}
+p {
+    text-align: justify;
+}
+h1 {
+    text-align: center;
+}

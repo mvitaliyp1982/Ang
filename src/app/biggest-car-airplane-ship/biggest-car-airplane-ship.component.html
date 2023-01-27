@@ -1,12 +1,10 @@
 <!-- <p>biggest-car-airplane-ship works!</p> -->
 
-<div class="container">
-    <div class="vehical-main">
-        <ul class="link-wrap">
-            <li><a routerLink="Car" class="link" routerLinkActive="active">Найбільший автомобіль</a ></li>
-            <li><a routerLink="Airplane" class="link" routerLinkActive="active">Найбільший літак</a ></li>
-            <li><a routerLink="Ship" class="link" routerLinkActive="active">Найбільший корабель</a ></li>
-        </ul>
-    </div>
-</div>
+<nav class="nav">
+    <a class="nav-link active" aria-current="page" href="#" routerLink="Car" routerLinkActive="active">Biggest Car</a>
+    <a class="nav-link" href="#" routerLink="Airplane" routerLinkActive="active">Biggest Airpane</a>
+    <a class="nav-link" href="#" routerLink="Ship" routerLinkActive="active">Biggest Ship</a>
+    <!-- <a class="nav-link disabled">Disabled</a> -->
+</nav>
+
 <router-outlet></router-outlet>

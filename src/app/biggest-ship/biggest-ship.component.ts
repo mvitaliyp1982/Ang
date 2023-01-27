@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./biggest-ship.component.css']
 })
 export class BiggestShipComponent {
-
+  profile:Array<string> =['../../assets/biggest_ship.jpg', '361',];
 }
