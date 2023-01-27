@@ -1,0 +1,19 @@
+.link-wrap{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+.link{
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    background-color: rgb(42, 175, 150);
+}
+.container{
+    max-width: 1200px;
+    padding: 0 20px;
+}
+.active{
+    background-color: rgb(32, 131, 113);
+}

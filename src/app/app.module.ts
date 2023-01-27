@@ -7,10 +7,20 @@ import { StrangeHobbyComponent } from './strange-hobby/strange-hobby.component';
 import { Hw02Component } from './hw02/hw02.component';
 import { Hw01Component } from './hw01/hw01.component';
 import { BaseComponent } from './base/base.component';
+import { BiggestAirplaneComponent } from './biggest-airplane/biggest-airplane.component';
+import { BiggestCarComponent } from './biggest-car/biggest-car.component';
+import { BiggestShipComponent } from './biggest-ship/biggest-ship.component';
+import { BiggestCarAirplaneShipComponent } from './biggest-car-airplane-ship/biggest-car-airplane-ship.component';
 
 
 const routes: Routes = [
-  {path:'', component: BaseComponent},
+  {path:'', component: BaseComponent,
+  children:[
+    {path: 'Airplane', component: BiggestAirplaneComponent},
+    {path: 'Car', component: BiggestCarComponent},
+    {path: 'Ship', component: BiggestShipComponent}
+  ]
+},
   {path:'StrangeHobbyComponent', component: StrangeHobbyComponent},
   {path:'Hw02Component', component: Hw02Component},
   {path:'Hw01Component', component: Hw01Component},
@@ -23,6 +33,10 @@ const routes: Routes = [
     Hw02Component,
     Hw01Component,
     BaseComponent,
+    BiggestAirplaneComponent,
+    BiggestCarComponent,
+    BiggestShipComponent,
+    BiggestCarAirplaneShipComponent,
   ],
   imports: [
     BrowserModule,

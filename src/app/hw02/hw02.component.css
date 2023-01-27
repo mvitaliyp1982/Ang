@@ -27,6 +27,12 @@ table {
     background-color: aqua;
     padding-left: 1%;
 }
+.answer_test {
+    background-color: aqua;
+    padding-left: 1%;
+    color: red;
+    font-weight: bold;
+}
 .photo {
     grid-area: photo;
     margin-top: 3.5%;
