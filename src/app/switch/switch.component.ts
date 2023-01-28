@@ -1,20 +1,21 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {AudiService} from './AudiService';
 import {ToDoItem} from './ToDoItem';
 import {ITEMS} from './mock-todo-items';
-import { AudiService } from './AudiService';
 
 @Component({
   selector: 'app-switch',
   templateUrl: './switch.component.html',
   styleUrls: ['./switch.component.css'],
-  providers: [AudiService]
+  providers: [AudiService],
 })
 export class SwitchComponent {
   result:any;
-  items = ITEMS
+  items = ITEMS;
+
   toDoItem:ToDoItem = {
     id: 11,
-    name: 'NAME',
+    name2: 'XXX',
     isComplite: true
   }
 
@@ -34,18 +35,17 @@ export class SwitchComponent {
     this.result = Number(left) * Number(right);
   }
 
-  aud:string[] = [];
-  name:string = '';
-  car:any;
-  bmwModels:Array <string> = ['BMW iX', 'BMW Z4', 'BMW X5', 'BMW X1'];
+  aud:string[] = []
+  name_car:string = ''
+  car:any
+  bmwModels:Array <string> = ['BMW iX(ЕЛЕКТРО)', 'BMW Z4', 'BMW X5', 'BMW X1']
   // audiModels:string[] = AudiService.getData()
-  mercedesModels:Array <string> = ['Mercedes-Benz C-Class Cabriolet', 'Mercedes-AMG GT', 'Mercedes-AMG GT'];
-  
+  mercedesModels:Array <string> = ['Mercedes-Benz C-Class Cabriolet', 'Mercedes-AMG GT 4-дверне купе', 'Mercedes-AMG GLE']
   constructor(private audiService:AudiService){
 
   }
-  addCar(name:string){
-    this.audiService.addData(name);
+  addCar(nameCar:string){
+    this.audiService.addData(nameCar);
   }
   ngOnInit(){
     this.aud = this.audiService.getData();

@@ -1,6 +1,9 @@
 p {
     background-color: gray;
 }
+h3 {
+    color: red;
+}
 .block {
     display: grid;
     grid-gap: 10px;

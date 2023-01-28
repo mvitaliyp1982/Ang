@@ -3,7 +3,7 @@ img {
     height: 57vh;
 }
 table {
-    width: 50vw;
+    width: 45vw;
     font-size: larger;
 }
 .all {
@@ -35,8 +35,7 @@ table {
 }
 .photo {
     grid-area: photo;
-    margin-top: 9%;
-    margin-bottom: 1%;
+    margin: 1% 0% 1% 5%;
 }
 .radio input {
     margin: 1%;

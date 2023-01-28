@@ -44,6 +44,23 @@
     <div class="photo">
         <!-- <br> -->
         <img src="./assets/IMG_20170622_081828.jpg" alt="">
+        <div class="for">
+            <h2>Отримані навички з таких предметів (ngFor):</h2>
+            <ul class="items">
+                <li *ngFor="let item of items">
+                    <b>{{item.id}}%</b> {{item.name2}}
+                </li>
+            </ul>
+        </div>
+        <div class="if" *ngIf="items.length > 0">
+            <h2>Кількість предметів, які було вивчено (ngIf):</h2>
+            <ul>
+                <li>
+                    <b>{{items.length}}</b>
+                    {{items.length == 1 ? 'item' : 'предметів'}}
+                </li>
+            </ul>
+        </div>
     </div>
     
 </div>

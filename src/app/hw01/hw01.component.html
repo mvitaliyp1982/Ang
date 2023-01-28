@@ -13,13 +13,29 @@
     <div class="text">
     <h1>Білл Гейтс</h1>
 
-    <ul class="quote">
+    <!-- <ul class="quote">
         <li>{{quote[0]}}</li>
         <li>{{quote[1]}}</li>
         <li>{{quote[2]}}</li>
         <li>{{quote[3]}}</li>
         <li>{{quote[4]}}</li>
-    </ul>
+    </ul> -->
+
+    <h3>Відомі цитати: (ngSwitch)</h3>
+        <input type="text" #input3 (keyup.enter)="quote_ = input3.value" placeholder="введіть 'quote1'">
+        <br>
+    <h3>Можете щось своє дописати :)</h3>
+        <input type="text" #addElem (keyup.enter)="addquote(addElem.value)">
+
+    <div [ngSwitch]="quote_">
+        <div *ngSwitchCase="'quote1'"> 
+            <ul class="quote">
+                <li *ngFor="let quote  of quotes">
+                    {{quote}}
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <h2>Біографія</h2>
 

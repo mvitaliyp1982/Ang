@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {ToDoItem} from './ToDoItem';
+import {ITEMS} from './mock-todo-items';
 
 @Component({
   selector: 'app-hw02',
@@ -17,6 +19,13 @@ export class Hw02Component {
   tm:any;
   info:string = 'hello';
   rs:any;
+
+  items = ITEMS;
+  toDoItem:ToDoItem = {
+    id: 11,
+    name2: 'XXX',
+    isComplite: true
+  }
 
 //   constructor() {
 // this.rs = Number(this.newDate) - Number(Date.now())

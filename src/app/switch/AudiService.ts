@@ -5,7 +5,7 @@ export class AudiService{
     getData():string[]{
         return this.data
     }
-    addData(name:string){
-        this.data.push(name)
+    addData(nameCar:string){
+        this.data.push(nameCar)
     }
 }

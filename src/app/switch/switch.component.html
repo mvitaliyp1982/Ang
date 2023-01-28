@@ -19,7 +19,7 @@
     <div class="auto">
         <label for=""><b>AUTO</b></label><br>
         <label for="">Введіть марку авто</label><br>
-        <input type="text" #input1 (keyup.enter)="car = input1.value">
+        <input type="text" #input3 (keyup.enter)="car = input3.value" placeholder="Audi,BMW,Mercedes">
         <br>
         <label for="">Введіть марку авто, яку потрібно додати</label><br>
         <input type="text" #addElem (keyup.enter)="addCar(addElem.value)">
@@ -59,13 +59,13 @@
         <h2>My list (ngFor)</h2>
         <ul class="items">
             <li *ngFor="let item of items">
-                {{item.id}}__{{item.name}}
+                {{item.id}}***{{item.name2}}
             </li>
         </ul>
     </div>
 
     <div class="if" *ngIf="items.length > 0">
-        <h2>ngIf</h2>
+        <h2>(ngIf)</h2>
         {{items.length}}
         {{items.length == 1 ? 'item' : 'items'}}
     </div>
