@@ -35,11 +35,8 @@ table {
 }
 .photo {
     grid-area: photo;
-    margin-top: 3.5%;
+    margin-top: 9%;
     margin-bottom: 1%;
-}
-.radio {
-    padding-left: 3%;
 }
 .radio input {
     margin: 1%;
@@ -49,4 +46,8 @@ td button {
     background-color: red;
     /* width: 40px;
     height: 40px; */
+}
+.test {
+    background-color: yellow;
+    padding-left: 1%;
 }

@@ -18,9 +18,9 @@ export class Hw02Component {
   info:string = 'hello';
   rs:any;
 
-  constructor() {
-this.rs = Number(this.newDate) - Number(Date.now())
-  }
+//   constructor() {
+// this.rs = Number(this.newDate) - Number(Date.now())
+//   }
 
   inc() {
     this.age++;

@@ -1,0 +1,36 @@
+<!-- <p>switch works!</p> -->
+<label for="">Введіть марку авто</label><br>
+<input type="text" #input1 (keyup.enter)="car = input1.value">
+<br>
+<br>
+<label for="">Введіть марку авто, яку потрібно додати</label><br>
+<input type="text" #addElem (keyup.enter)="addCar(addElem.value)">
+<div [ngSwitch]="car">
+    <div *ngSwitchCase="'Audi'"> 
+        <h3>This is Audi model list:</h3>
+        <ul>
+            <li *ngFor="let model  of aud">
+                {{model}}
+            </li>
+        </ul>
+    </div>
+    <div *ngSwitchCase="'BMW'">
+        <h3>This is BMW model list:</h3>
+        <ul>
+            <li *ngFor="let model  of bmwModels">
+                {{model}}
+            </li>
+        </ul>
+    </div>
+    <div *ngSwitchCase="'Mercedes'">
+        <h3>This is Mercedes model list:</h3>
+        <ul>
+            <li *ngFor="let model  of mercedesModels">
+                {{model}}
+            </li>
+        </ul>
+    </div>
+    <div *ngSwitchDefault>
+        <h3>Car is undefined</h3>
+    </div>
+  </div>

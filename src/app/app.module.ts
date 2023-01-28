@@ -11,6 +11,7 @@ import { BiggestAirplaneComponent } from './biggest-airplane/biggest-airplane.co
 import { BiggestCarComponent } from './biggest-car/biggest-car.component';
 import { BiggestShipComponent } from './biggest-ship/biggest-ship.component';
 import { BiggestCarAirplaneShipComponent } from './biggest-car-airplane-ship/biggest-car-airplane-ship.component';
+import { SwitchComponent } from './switch/switch.component';
 
 
 const routes: Routes = [
@@ -37,6 +38,7 @@ const routes: Routes = [
     BiggestCarComponent,
     BiggestShipComponent,
     BiggestCarAirplaneShipComponent,
+    SwitchComponent,
   ],
   imports: [
     BrowserModule,
