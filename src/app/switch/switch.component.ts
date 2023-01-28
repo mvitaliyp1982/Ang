@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {ToDoItem} from './ToDoItem';
+import {ITEMS} from './mock-todo-items';
 import { AudiService } from './AudiService';
 
 @Component({
@@ -8,12 +10,37 @@ import { AudiService } from './AudiService';
   providers: [AudiService]
 })
 export class SwitchComponent {
-  aud:string[] = []
-  name:string = ''
-  car:any
-  bmwModels:Array <string> = ['BMW iX', 'BMW Z4', 'BMW X5', 'BMW X1']
+  result:any;
+  items = ITEMS
+  toDoItem:ToDoItem = {
+    id: 11,
+    name: 'NAME',
+    isComplite: true
+  }
+
+  showResult(text:any) {
+    this.result =text;
+  }
+  plus(left:any, right:any) {
+    this.result = Number(left) + Number(right);
+  }
+  minus(left:any, right:any) {
+    this.result = Number(left) - Number(right);
+  }
+  divide(left:any, right:any) {
+    this.result = Number(left) / Number(right);
+  }
+  multiply(left:any, right:any) {
+    this.result = Number(left) * Number(right);
+  }
+
+  aud:string[] = [];
+  name:string = '';
+  car:any;
+  bmwModels:Array <string> = ['BMW iX', 'BMW Z4', 'BMW X5', 'BMW X1'];
   // audiModels:string[] = AudiService.getData()
-  mercedesModels:Array <string> = ['Mercedes-Benz C-Class Cabriolet', 'Mercedes-AMG GT', 'Mercedes-AMG GT']
+  mercedesModels:Array <string> = ['Mercedes-Benz C-Class Cabriolet', 'Mercedes-AMG GT', 'Mercedes-AMG GT'];
+  
   constructor(private audiService:AudiService){
 
   }

@@ -1,3 +1,30 @@
-* {
+/* * {
     margin-left: 1%;
+} */
+.block {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:"calc auto for if";
+    align-items: start;
+    background-color: violet;
+    margin: 1%;
+    padding: 1%;
+}
+.calc {
+    grid-area: calc;
+}
+.calc button {
+    margin: 0% 3.5% 1.5% 1%;
+    background-color: red;
+    border: none;
+}
+.auto {
+    grid-area: auto;
+    margin-left: 1%;
+}
+.for {
+    grid-area: for;
+}
+.if {
+    grid-area: if;
 }
