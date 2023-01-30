@@ -14,6 +14,8 @@ import { BiggestCarAirplaneShipComponent } from './biggest-car-airplane-ship/big
 import { SwitchComponent } from './switch/switch.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { GallerySanFranciscoComponent } from './gallery-san-francisco/gallery-san-francisco.component';
+import { GalleryLondonComponent } from './gallery-london/gallery-london.component';
+import { GalleryNewYorkComponent } from './gallery-new-york/gallery-new-york.component';
 
 
 const routes: Routes = [
@@ -22,25 +24,20 @@ const routes: Routes = [
     {path: 'Airplane', component: BiggestAirplaneComponent},
     {path: 'Car', component: BiggestCarComponent},
     {path: 'Ship', component: BiggestShipComponent},
-    {path: 'GalleryComponent', component: GalleryComponent},
-    {path: 'SwitchComponent', component: SwitchComponent},
-    {path: 'GallerySanFranciscoComponent', component: GallerySanFranciscoComponent},
+    {path: 'Gallery', component: GalleryComponent},
+    {path: 'Switch', component: SwitchComponent},
+    // {path: 'GallerySanFrancisco', component: GallerySanFranciscoComponent},
   ]
 },
     {path: 'StrangeHobbyComponent', component: StrangeHobbyComponent},
     {path: 'Hw02Component', component: Hw02Component},
     {path: 'Hw01Component', component: Hw01Component},
-    {path: 'GalleryComponent', component: GalleryComponent},
-    {path: 'GallerySanFranciscoComponent', component: GallerySanFranciscoComponent},   
+    // {path: 'Gallery', component: GalleryComponent},
+    {path: 'GallerySanFrancisco', component: GallerySanFranciscoComponent},   
+    {path: 'GalleryLondon', component: GalleryLondonComponent},
+    {path: 'GalleryNewYork', component: GalleryNewYorkComponent},
 ]
 
-const routes2: Routes = [
-  {path:'', component: GalleryComponent,
-  children:[
-  {path: 'GallerySanFranciscoComponent', component: GallerySanFranciscoComponent},
-  ]
-}
-]
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,6 +52,8 @@ const routes2: Routes = [
     SwitchComponent,
     GalleryComponent,
     GallerySanFranciscoComponent,
+    GalleryLondonComponent,
+    GalleryNewYorkComponent,
   ],
   imports: [
     BrowserModule,

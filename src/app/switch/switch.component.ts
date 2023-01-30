@@ -1,7 +1,7 @@
-import {Component} from '@angular/core';
-import {AudiService} from './AudiService';
-import {ToDoItem} from './ToDoItem';
-import {ITEMS} from './mock-todo-items';
+import { Component } from '@angular/core';
+import { AudiService } from './AudiService';
+import { ToDoItem } from './ToDoItem';
+import { ITEMS } from './mock-todo-items';
 
 @Component({
   selector: 'app-switch',
