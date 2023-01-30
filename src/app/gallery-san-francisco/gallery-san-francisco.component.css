@@ -10,6 +10,16 @@ img {
 h2 {
     margin: 1%;
 }
+table {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: larger;
+    background-color: yellow;
+}
+td, tr {
+    border: 3px solid blue;
+    width: 80%;
+}
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
