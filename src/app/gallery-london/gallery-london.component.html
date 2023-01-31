@@ -10,6 +10,7 @@
             </a>
         </div>
         <table>
+            <h3>{{city[1]}}</h3>
             <tbody>
                 <tr><td>{{info[3] | uppercase}}</td><td>{{info[0] | date: 'yy'}} рік</td></tr>
                 <tr><td>{{info[4] | uppercase}}</td><td>{{info[1]}} км²</td></tr>
@@ -20,7 +21,7 @@
     </article>
 </div>
         <div class="img">
-            <img src="../../assets/london1.webp" alt="">
-            <img src="../../assets/london2.webp" alt="">
-            <img src="../../assets/london3.webp" alt="">
+            <a href="{{img[0]}}"> <img src="{{img[0]}}" alt=""> </a>
+            <a href="{{img[1]}}"> <img src="{{img[1]}}" alt=""> </a>
+            <a href="{{img[2]}}"> <img src="{{img[2]}}" alt=""> </a>
         </div>
