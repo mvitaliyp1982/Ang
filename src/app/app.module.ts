@@ -16,6 +16,9 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { GallerySanFranciscoComponent } from './gallery-san-francisco/gallery-san-francisco.component';
 import { GalleryLondonComponent } from './gallery-london/gallery-london.component';
 import { GalleryNewYorkComponent } from './gallery-new-york/gallery-new-york.component';
+import { GalleryCapeTownComponent } from './gallery-cape-town/gallery-cape-town.component';
+import { GalleryBeijingComponent } from './gallery-beijing/gallery-beijing.component';
+import { GalleryParisComponent } from './gallery-paris/gallery-paris.component';
 
 
 const routes: Routes = [
@@ -36,6 +39,9 @@ const routes: Routes = [
     {path: 'GallerySanFrancisco', component: GallerySanFranciscoComponent},   
     {path: 'GalleryLondon', component: GalleryLondonComponent},
     {path: 'GalleryNewYork', component: GalleryNewYorkComponent},
+    {path: 'GalleryCapeTown', component: GalleryCapeTownComponent},
+    {path: 'GalleryBeijing', component: GalleryBeijingComponent},
+    {path: 'GalleryParis', component: GalleryParisComponent},
 ]
 
 @NgModule({
@@ -54,6 +60,9 @@ const routes: Routes = [
     GallerySanFranciscoComponent,
     GalleryLondonComponent,
     GalleryNewYorkComponent,
+    GalleryCapeTownComponent,
+    GalleryBeijingComponent,
+    GalleryParisComponent,
   ],
   imports: [
     BrowserModule,

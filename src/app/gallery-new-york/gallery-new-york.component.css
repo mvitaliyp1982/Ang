@@ -26,7 +26,26 @@ td, tr {
     /* grid-template-areas:"img text text"; */
     align-items: center;
     grid-gap: 1em;
-    margin-left: 25%;
+    margin-left: 33.1%;
+}
+
+.img {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    align-items: center;
+    margin-left: .5%;
+    margin-bottom: .5%;
+}
+
+.img img {
+    overflow: hidden;
+    /* width: 50%; */
+    transition: all 1s ease-out;
+    width: 500px;
+    height: 350px;
+}
+.img img:hover {
+    transform: scale(1.5);
 }
   
   

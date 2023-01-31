@@ -1,6 +1,6 @@
 <!-- <p>gallery-san-francisco works!</p> -->
 <div class="grid-container">
-    <article id="3685" class="location-listing">
+    <article id="777" class="location-listing">
     
         <a class="location-title" href="{{src[0]}}">{{city[0]}}</a>
 
@@ -11,11 +11,16 @@
         </div>
         <table>
             <tbody>
-                <tr><td>{{info[3]}}</td><td>{{info[0]}} рік</td></tr>
-                <tr><td>{{info[4]}}</td><td>{{info[1]}} км²</td></tr>
-                <tr><td>{{info[5]}}</td><td>{{info[2]}} (2013)</td></tr>
+                <tr><td>{{info[3] | uppercase}}</td><td>{{info[0] | date: 'yyyy'}} рік</td></tr>
+                <tr><td>{{info[4] | uppercase}}</td><td>{{info[1]}} км²</td></tr>
+                <tr><td>{{info[5] | uppercase}}</td><td>{{info[2]}}</td></tr>
             </tbody>
         </table>
 
     </article>
 </div>
+        <div class="img">
+            <img src="../../assets/SF1.avif" alt="">
+            <img src="../../assets/SF2.jpg" alt="">
+            <img src="../../assets/SF3.jpg" alt="">
+        </div>

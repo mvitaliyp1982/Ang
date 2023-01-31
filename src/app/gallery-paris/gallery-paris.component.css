@@ -24,7 +24,7 @@ td, tr {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     /* grid-template-areas:"img text text"; */
-    align-items: stretch;
+    align-items: center;
     grid-gap: 1em;
     margin-left: 33.1%;
 }
@@ -47,7 +47,6 @@ td, tr {
 .img img:hover {
     transform: scale(1.5);
 }
-  
   
 /* hover styles */
 .location-listing {
