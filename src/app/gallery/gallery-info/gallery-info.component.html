@@ -1,0 +1,29 @@
+<!-- <p>gallery-info works!</p> -->
+
+<div class="grid-container" *ngFor="let item of items">
+    <article id="777" class="location-listing">
+    
+        <a class="location-title" href="{{item.src}}">{{item.city}}</a>
+
+        <div class="location-image">
+            <a href="#">
+                <img src="{{item.src}}" alt="{{item.city}}">
+            </a>
+        </div>
+        <table>
+            <h3>{{item.city}}</h3>
+            <tbody>
+                <tr><td>{{item.que1 | uppercase}}</td><td>{{item.info1 | date: 'yyyy'}} рік</td></tr>
+                <tr><td>{{item.que2 | uppercase}}</td><td>{{item.info2}} км²</td></tr>
+                <tr><td>{{item.que3 | uppercase}}</td><td>{{item.info3}}</td></tr>
+            </tbody>
+        </table>
+
+    </article>
+    <div class="img">
+        <a href="{{item.img1}}"> <img src="{{item.img1}}" alt=""> </a>
+        <a href="{{item.img2}}"> <img src="{{item.img2}}" alt=""> </a>
+        <a href="{{item.img3}}"> <img src="{{item.img3}}" alt=""> </a>
+    </div>
+</div>
+       

@@ -13,12 +13,13 @@ import { BiggestShipComponent } from './biggest-ship/biggest-ship.component';
 import { BiggestCarAirplaneShipComponent } from './biggest-car-airplane-ship/biggest-car-airplane-ship.component';
 import { SwitchComponent } from './switch/switch.component';
 import { GalleryComponent } from './gallery/gallery.component';
-import { GallerySanFranciscoComponent } from './gallery-san-francisco/gallery-san-francisco.component';
-import { GalleryLondonComponent } from './gallery-london/gallery-london.component';
-import { GalleryNewYorkComponent } from './gallery-new-york/gallery-new-york.component';
-import { GalleryCapeTownComponent } from './gallery-cape-town/gallery-cape-town.component';
-import { GalleryBeijingComponent } from './gallery-beijing/gallery-beijing.component';
-import { GalleryParisComponent } from './gallery-paris/gallery-paris.component';
+import { GallerySanFranciscoComponent } from './gallery/gallery-san-francisco/gallery-san-francisco.component';
+import { GalleryLondonComponent } from './gallery/gallery-london/gallery-london.component';
+import { GalleryNewYorkComponent } from './gallery/gallery-new-york/gallery-new-york.component';
+import { GalleryCapeTownComponent } from './gallery/gallery-cape-town/gallery-cape-town.component';
+import { GalleryBeijingComponent } from './gallery/gallery-beijing/gallery-beijing.component';
+import { GalleryParisComponent } from './gallery/gallery-paris/gallery-paris.component';
+import { GalleryInfoComponent } from './gallery/gallery-info/gallery-info.component';
 
 
 const routes: Routes = [
@@ -42,6 +43,8 @@ const routes: Routes = [
     {path: 'GalleryCapeTown', component: GalleryCapeTownComponent},
     {path: 'GalleryBeijing', component: GalleryBeijingComponent},
     {path: 'GalleryParis', component: GalleryParisComponent},
+    {path: 'GalleryInfo', component: GalleryInfoComponent},
+    
 ]
 
 @NgModule({
@@ -63,6 +66,7 @@ const routes: Routes = [
     GalleryCapeTownComponent,
     GalleryBeijingComponent,
     GalleryParisComponent,
+    GalleryInfoComponent,
   ],
   imports: [
     BrowserModule,
